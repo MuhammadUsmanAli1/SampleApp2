@@ -20,7 +20,8 @@ pipeline {
          }        
         stage('Clean'){
            steps{
-               bat 'dotnet clean MySampleApp.sln --configuration Release'
+               //bat 'dotnet clean MySampleApp.sln --configuration Release'
+               bat 'echo cleaned'
             }
          }
         stage('Build'){
