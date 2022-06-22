@@ -31,7 +31,8 @@ pipeline {
         stage('Test: Unit Test'){
            steps {
                 //bat 'dotnet test MySampleApp/ --configuration Release --no-restore'
-             }bat 'echo no test added'
+               bat 'echo no test added'
+             }
           }
         stage('Publish'){
              steps{
